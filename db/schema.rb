@@ -9,6 +9,7 @@
 # from scratch. The latter is a flawed and unsustainable approach (the more migrations
 # you'll amass, the slower it'll run and the greater likelihood for issues).
 #
+<<<<<<< HEAD
 # It's strongly recommended that you check this file into your version control system.
 
 ActiveRecord::Schema.define(version: 20150421001134) do
@@ -44,6 +45,34 @@ ActiveRecord::Schema.define(version: 20150421001134) do
     t.boolean  "active",      default: true
     t.datetime "created_at",                 null: false
     t.datetime "updated_at",                 null: false
+=======
+# It's strongly recommended to check this file into your version control system.
+
+ActiveRecord::Schema.define(:version => 20120412125204) do
+
+  create_table "categories", :force => true do |t|
+    t.string   "name"
+    t.boolean  "active",     :default => true
+    t.datetime "created_at",                   :null => false
+    t.datetime "updated_at",                   :null => false
+  end
+
+  create_table "photos", :force => true do |t|
+    t.string   "caption"
+    t.integer  "category_id"
+    t.boolean  "active",      :default => true
+    t.datetime "created_at",                    :null => false
+    t.datetime "updated_at",                    :null => false
+    t.string   "image"
+  end
+
+  create_table "proverbs", :force => true do |t|
+    t.string   "klingon"
+    t.string   "translation"
+    t.boolean  "active",      :default => true
+    t.datetime "created_at",                    :null => false
+    t.datetime "updated_at",                    :null => false
+>>>>>>> aa8af1a3f4bba0194710c88ef80f7c1ade93f4d8
   end
 
 end

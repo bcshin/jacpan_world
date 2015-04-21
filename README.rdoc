@@ -2,4 +2,8 @@ This is an extension of a super simple Rails app that was built as a class demon
 
 Twitter bootstrap is used to give the style a basic facelift, but we are using a static version with the asset pipeline turned off so that PC users can use this code base as easily as Linux and Mac users.
 
+<<<<<<< HEAD
 *NOTE*: This project does require the use of the will_paginate, carrierwave, and simple_form gems to work properly. This project also requires ruby version *2.0.0*.
+=======
+NOTE: This project does require the use of the will_paginate, carrierwave, and simple_form gems to work properly. 
+>>>>>>> aa8af1a3f4bba0194710c88ef80f7c1ade93f4d8
